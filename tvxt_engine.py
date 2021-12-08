@@ -27,7 +27,7 @@ def tvxt_engine():
     print("Receive command and start process.")
     command = request.args.get('function')
     filepath = request.args.get('upload_filepath')
-    print("YES ENGINE IS RUNNING FILE " + str(filepath))
+    return "YES ENGINE IS RUNNING FILE " + str(filepath)
     # if command == "PROCESS_SAMPLE":
     #     print("Enter PROCESSS_SAMPLE")
     #     cmd = ["python3", "TVExtract_Sample.py"]  ##linux
@@ -56,4 +56,4 @@ def tvxt_engine():
     # return jsonify(True)
 
 if __name__ == '__main__':
-    app.run(host='34.125.138.164', port=22, debug=True, threaded=True)
+   app.run(host='0.0.0.0', port=80)
