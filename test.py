@@ -6,4 +6,4 @@ def index():
     return "Hello World"
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='34.125.138.164', port=80,debug=True)
