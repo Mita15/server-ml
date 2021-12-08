@@ -22,17 +22,16 @@ app = Flask(__name__)
 # curl "http://10.148.0.9:8011/tvxt_engine?function=LC_TEST&upload_filepath=/var/www/maybank-ocr-ml/samples/LC/1494BCA201224-13308104475-LC.pdf"
 #Process ID_KTP
 ## For Flask usage
+
 @app.route('/tvxt_engine')
 def tvxt_engine():
     print("Receive command and start process.")
-    command = request.args.get('function')
-    filepath = request.args.get('upload_filepath')
-    return "YES ENGINE IS RUNNING FILE " + str(filepath)
-    # if command == "PROCESS_SAMPLE":
-    #     print("Enter PROCESSS_SAMPLE")
-    #     cmd = ["python3", "TVExtract_Sample.py"]  ##linux
-    #     cmd.append(filepath)
-    #     callrunning = subprocess.Popen(cmd)
+    # command = request.args.get('function')
+    # filepath = request.args.get('upload_filepath')
+    cmd = ["python3", "Test_post.py"]  ##linux
+    callrunning = subprocess.Popen(cmd)
+
+    return 'File Jalan'
     # if command == "PROCESS_MY_MAYBANK":
     #     print("Enter PROCESS_MY_MAYBANK")
     #     cmd = ["python3", "TVExtract_MY_MBB.py"]  ##linux
