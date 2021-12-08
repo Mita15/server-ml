@@ -56,4 +56,4 @@ def tvxt_engine():
     # return jsonify(True)
 
 if __name__ == '__main__':
-    app.run(host='34.125.139.205', port=80, debug=True, threaded=True)
+    app.run(host='34.125.138.164', port=22, debug=True, threaded=True)
