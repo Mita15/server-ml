@@ -2,7 +2,7 @@ import paramiko
 
 
 host = '34.125.139.205'
-port = '22'
+port = 22
 user = 'sftp_tvx'
 password = '<L8m\hEg'
 transport = paramiko.Transport((host, port))
