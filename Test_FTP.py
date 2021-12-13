@@ -6,6 +6,7 @@ password = '<L8m\hEg'
 
 def jalanin_ini():
     with FTP(host) as ftp:
+        print('Function Jalan')
         ftp.login(user=user, passwd=password)
         print('Login success')
         ftp.cwd('/var/www/tvextract-skripsi/uploads/tmp/')
