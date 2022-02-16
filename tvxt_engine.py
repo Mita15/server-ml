@@ -31,7 +31,11 @@ def tvxt_engine():
     cmd = ["python3", "Test_post.py"]  ##linux
     callrunning = subprocess.Popen(cmd)
 
-    return 'File Jalan'
+    if request.method=="POST":
+        return 'File Jalan'
+    
+
+    return 'Post ga jalan'
     # if command == "PROCESS_MY_MAYBANK":
     #     print("Enter PROCESS_MY_MAYBANK")
     #     cmd = ["python3", "TVExtract_MY_MBB.py"]  ##linux
