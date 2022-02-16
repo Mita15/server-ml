@@ -37,13 +37,13 @@ def tvxt_engine():
     command = request.args.get('function')
 
     if request.method=="POST":
-        body = request.form
+        body = request.form['function']
         # print(body)
         # url = URL_PDF_FRONTEND + str(filenames) #get pdf from php side
         # filepaths = URL_PDF_BACKEND + str(filenames) #save pdf to python side
         # response = requests.get(url)
-        body_string = body.text
-        return body_string
+        print(body)
+        return 'receive'
     
 
     return 'Post ga jalan'
