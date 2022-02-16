@@ -42,7 +42,7 @@ def tvxt_engine():
             response = requests.get(url)
             with open(filepaths,"wb") as f:
                 f.write(response.content)
-            return True
+            return 'receive'
     
 
     return 'Post ga jalan'
