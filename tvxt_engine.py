@@ -43,10 +43,10 @@ def tvxt_engine():
         # filepaths = URL_PDF_BACKEND + str(filenames) #save pdf to python side
         # response = requests.get(url)
         
-        # return 'File Jalan'
+        return body
     
 
-    # return 'Post ga jalan'
+    return 'Post ga jalan'
 
 if __name__ == '__main__':
    app.run(host='0.0.0.0', port=80)
