@@ -29,20 +29,19 @@ URL_PDF_BACKEND = "/var/html/server-ml/samples/"
 @app.route('/tvxt_engine', methods=['GET', 'POST'])
 def tvxt_engine():
     print("Receive command and start process.")
-    # command = request.args.get('function')
-    # filepath = request.args.get('upload_filepath')
     cmd = ["python3", "Test_post.py"]  ##linux
     callrunning = subprocess.Popen(cmd)
 
-    command = request.args.get('function')
 
     if request.method=="POST":
-        body = request.values.get('function')
+        body1 = request.values.get('function')
+        body2 = request.values.get('file')
         # print(body)
         # url = URL_PDF_FRONTEND + str(filenames) #get pdf from php side
         # filepaths = URL_PDF_BACKEND + str(filenames) #save pdf to python side
         # response = requests.get(url)
-        print(body)
+        print(body1)
+        print(body2)
         return 'receive'
     
 
