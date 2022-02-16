@@ -42,8 +42,8 @@ def tvxt_engine():
         # url = URL_PDF_FRONTEND + str(filenames) #get pdf from php side
         # filepaths = URL_PDF_BACKEND + str(filenames) #save pdf to python side
         # response = requests.get(url)
-        
-        return body
+        body_string = str(body)
+        return body_string
     
 
     return 'Post ga jalan'
