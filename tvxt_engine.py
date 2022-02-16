@@ -42,7 +42,7 @@ def tvxt_engine():
         # url = URL_PDF_FRONTEND + str(filenames) #get pdf from php side
         # filepaths = URL_PDF_BACKEND + str(filenames) #save pdf to python side
         # response = requests.get(url)
-        body_string = str(body)
+        body_string = body.text
         return body_string
     
 
