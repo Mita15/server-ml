@@ -65,7 +65,7 @@ PROCESS_NAME        = "DEFAULT_BANKSTATEMENT"
 #TVEXTRACT_FOLDER    = r"/var/www/html/tvextract-web/application/libraries/python/"
 #Uncheck below if run in local directory
 #TVEXTRACT_FOLDER   = r"[YOUR LOCAL DIRECTORY]"
-TVEXTRACT_FOLDER    = r"/var/www/maybank-ocr-ml/MayBank_TVEXTRACT/"
+TVEXTRACT_FOLDER    = r"/var/html/main/"
 
 ### ALL PROCESS / OUTPUT FILE NAME IS FOLLOWING RAW / INPUT FILE NAME ###
 # For all raw / input files
