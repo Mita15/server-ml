@@ -37,7 +37,7 @@ isDebug     = False  # For showing all detailed output in ipynb
 isDeploy    = True  # For running at server, with MINIMAL processes
 isOutputXls = True   # For generating xlsx
 isOutputJsn = True   # For generating json
-host = '10.148.0.3'
+host = '10.184.0.6'
 user = 'tvx'
 password = 'php@ml123'
 app = Flask(__name__)
@@ -50,12 +50,12 @@ global URL_WebApp
 global URL_Receive
 global URL_Json
 
-api_ip = '35.198.224.9'
+api_ip = '34.101.203.130'
 URL_Success = 'http://' + api_ip + ':80/index.php/panggilAku'
 URL_Error = 'http://' + api_ip + ':80/index.php/panggilAku/index_error'
 URL_Receive = 'http://' + api_ip + ':80/index.php/panggilAku/receive'
-URL_WebApp = '/var/www/html/maybank-ocr/uploads/static/'
-URL_Json = '/var/www/html/maybank-ocr/uploads/json/'
+URL_WebApp = '/var/html/output/static/'
+URL_Json = '/var/html/output/json/'
 
 PROCESS_NAME        = "DEFAULT_BANKSTATEMENT"
 
