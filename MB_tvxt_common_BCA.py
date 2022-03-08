@@ -95,7 +95,7 @@ FILE_NAME_IN_PROCESS= ""
 # Windows path to tesseract
 pytesseract.pytesseract.tesseract_cmd = r"/opt/tesseract/./tesseract"
 #dictionary = enchant.Dict("en_US")
-PDF2IMG_POPPLER_PATH=r"C:/Program Files/poppler-0.68.0/bin"
+PDF2IMG_POPPLER_PATH=""
 
 SAMPLE_DIRECTORY = ""
 PDF2IMG_POPPLER_PATH = ""
