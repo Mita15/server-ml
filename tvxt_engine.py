@@ -43,9 +43,22 @@ def tvxt_engine():
             with open(filepaths,"wb") as f:
                 f.write(response.content)
             return 'receive'
+        
+       if command == "PROCESS_ID_BCA_TYPE_1":
+			filenames = request.form.get("filename")
+			url = URL_PDF_FRONTEND + str(filenames) #get pdf from php side
+			filepaths = URL_PDF_BACKEND + str(filenames) #save pdf to python side
+			response = requests.get(url)
+			with open(filepaths,"wb") as f:
+				f.write(response.content)
+			print("Enter PROCESS_ID_BCA_TYPE_1")
+			cmd = ["python3", "ID_BCA_1_FUNCTIONS.py"]  ##linux
+			cmd.append(filepaths)
+			PrintLog("API Success",filenames)
+			callrunning = subprocess.Popen(cmd)
     
 
-    return 'Post ga jalan'
+    return jsonify(True)
 
 if __name__ == '__main__':
    app.run(host='0.0.0.0', port=80)
