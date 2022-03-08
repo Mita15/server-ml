@@ -93,7 +93,7 @@ FILE_NAME_IN_PROCESS= ""
 ## Web server ##
 #pytesseract.pytesseract.tesseract_cmd = r"/opt/tesseract/tesseract"
 # Windows path to tesseract
-pytesseract.pytesseract.tesseract_cmd = r"/usr/bin"
+pytesseract.pytesseract.tesseract_cmd = r"/usr/bin/tesseract"
 #dictionary = enchant.Dict("en_US")
 PDF2IMG_POPPLER_PATH = ""
 
