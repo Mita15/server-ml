@@ -1253,7 +1253,7 @@ def ConvertFileToImageByChris(filepath):
             page.save(output_filepath, 'JPEG')
             page.save(output_filepath2, 'JPEG')
             file_name = os.path.basename(filepath)
-            test = '/var/www/maybank-ocr-ml/MayBank_TVEXTRACT/process/' + str(file_name_no_ext) + "_" + str(i) + '.jpg'
+            test = 'PROCESS_FOLDER_PATH + str(file_name_no_ext) + "_" + str(i) + '.jpg'
             myfiles = {'image' : open(test, 'rb')}
             post_status_to_webapp = requests.post(URL_Receive,{'filename':file_name},files=myfiles)
             i = i + 1
