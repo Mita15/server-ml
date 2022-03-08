@@ -3,7 +3,7 @@ from ftplib import FTP
 import requests
 import calendar
 from calendar import monthrange
-TVEXTRACT_FOLDER    = r"/var/www/html/MayBank_TVEXTRACT/"
+TVEXTRACT_FOLDER    = r"/var/html/main/"
 
 ### ALL PROCESS / OUTPUT FILE NAME IS FOLLOWING RAW / INPUT FILE NAME ###
 # For all raw / input files
