@@ -19,7 +19,7 @@ isDeploy = True
 app = Flask(__name__)
 web_ip = '34.101.203.130'
 URL_PDF_FRONTEND = "http://"+ web_ip +"/uploads/document/" #postgre
-URL_PDF_BACKEND = "/var/html/server-ml/samples/"
+URL_PDF_BACKEND = "/var/html/main/sample/"
 # curl "http://34.87.11.139:8011/tvxt_engine?function=PROCESS_ID_MANDIRI_TYPE_1&upload_filepath=/var/www/html/samples/Mandiri/RK_Mandiri_5622_BMP2.pdf"
 # curl "http://34.126.166.29:8011/tvxt_engine?function=PROCESS_ID_BCA_TYPE_1&upload_filepath=/home/tvx/samples/20210602155228-4046f52a-c6ca-4be6-8018-f22f24003bdf.pdf"
 # curl "http://10.148.0.9:8011/tvxt_engine?function=LC_TEST&upload_filepath=/var/www/maybank-ocr-ml/samples/LC/1494BCA201224-13308104475-LC.pdf"
