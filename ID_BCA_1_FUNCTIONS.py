@@ -1089,7 +1089,7 @@ def PROCESS_ID_BCA_TYPE_1():
             Temp_Img_Data.append(img_data)
             result1 = ProcessTesseract(processedimglvl1,1)
             
-            file = open("/var/www/html/MAYBANK_TVEXTRACT_OUTPUT/txt/result_BCA"+str(R+1)+' '+str(file_name)+".txt","w")
+            file = open("/var/html/main/txt/"+str(R+1)+' '+str(file_name)+".txt","w")
             file.write(result1) 
             file.close()
             
